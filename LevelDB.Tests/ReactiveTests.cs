@@ -83,6 +83,7 @@ namespace LevelDB.Tests
                     while (iterator.Valid())
                     {
                         var key = iterator.StringKey();
+                        Console.WriteLine(key);
                         actual.Add(key);
                         iterator.Next();
                     }
